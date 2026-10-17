@@ -6,6 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>King of Nifty</title>
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1713654573662586');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1713654573662586&ev=PageView&noscript=1"
+/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
 * {
     margin: 0;
@@ -202,8 +222,7 @@ h1 {
 <main class="card">
 
     <div class="profile">
-        <!-- Apni photo ko profile.jpg naam se save karke
-             index.html ke same folder mein rakho -->
+        <!-- Profile photo: images/nifty.jpeg -->
         <img src="images/nifty.jpeg" alt="Gautam Jhaa profile"
              onerror="this.style.display='none'; this.parentElement.textContent='GJ'; this.parentElement.style.display='grid'; this.parentElement.style.placeItems='center'; this.parentElement.style.color='#ffca05'; this.parentElement.style.fontSize='28px'; this.parentElement.style.fontWeight='bold';">
     </div>
@@ -252,7 +271,7 @@ h1 {
 </main>
 
 <script>
-// Telegram link ko apne channel ke hisaab se update kar sakte ho.
+// Telegram button click logging
 document.querySelectorAll(".telegram-btn").forEach(function(button) {
     button.addEventListener("click", function() {
         console.log("Telegram channel button clicked");
